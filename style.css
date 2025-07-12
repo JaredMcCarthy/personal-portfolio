@@ -1,9 +1,31 @@
-h1 {
-  text-align: center;
-  padding-top: 20%;
+/* Contenedor de la barra de navegacion */
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
-p {
-  padding-left: 35%;
-  width: 300px;
+.navbar {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.navbar a {
+  float: right;
+  font-size: 15px;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  padding-right: 80px;
+}
+
+.name-logo h1 {
+  font-size: 18px;
+  color: white;
+  padding: 20px;
+  padding-left: 10%;
+  font-family: inherit;
+  margin: 0;
+  font-weight: bold;
 }
