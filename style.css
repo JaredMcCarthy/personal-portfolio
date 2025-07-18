@@ -7,17 +7,19 @@ body {
 
 .navbar {
   font-family: sans-serif;
-  background-color: rgb(175, 8, 8);
+  background-color: rgba(0, 0, 0, 0.772);
+  padding-bottom: 10px;
 }
 
 .navbar a {
   float: right;
-  font-size: 15px;
-  color: white;
-  padding: 20px;
+  font-size: 16px;
+  color: rgba(16, 4, 4, 0.772);
+  padding: 25px;
   text-decoration: none;
   font-weight: bold;
-  padding-right: 80px;
+  padding-right: 70px;
+  color: white;
 }
 
 .name-logo h1 {
@@ -69,6 +71,19 @@ body {
 
 .hero {
   height: 100%;
-  background-color: #461313;
+  background-color: rgba(16, 4, 4, 0.772);
   padding: 10%;
+}
+
+/* CSS de la imagen de perfil en el hero */
+/* Este es para la ubicacion de la foto de perfil en el hero */
+.prof-imagen img {
+  width: 350px;
+  height: auto;
+  padding-top: -300px;
+  position: absolute;
+  top: 3px;
+  right: 12%;
+  top: 20%;
+  border-radius: 1.5rem;
 }
