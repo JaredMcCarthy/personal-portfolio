@@ -7,14 +7,14 @@ body {
 
 .navbar {
   font-family: sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-color: #010e29;
   padding-bottom: 10px;
+  border-style: solid;
 }
 
 .navbar a {
   float: right;
   font-size: 16px;
-  color: rgba(16, 4, 4, 0.772);
   padding: 25px;
   text-decoration: none;
   font-weight: bold;
@@ -71,7 +71,7 @@ body {
 
 .hero {
   height: 100%;
-  background-color: rgba(16, 4, 4, 0.772);
+  background-color: #010e29;
   padding: 10%;
 }
 
@@ -87,3 +87,69 @@ body {
   top: 20%;
   border-radius: 1.5rem;
 }
+
+/* CSS del boron iniciar */
+/* Los primeros dos son para tamaño, ubicacion, letra, estilo del boton */
+
+.boton-iniciar {
+  margin-left: 77%;
+  padding-left: 180%;
+  margin-top: 25px;
+}
+
+.boton-iniciar {
+  padding: 16px 95px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* este CSS es para la animacion hecha y ajustada de .io */
+
+.boton-iniciar {
+  border: 1px solid #000000;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+.boton-iniciar::before,
+.boton-iniciar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.boton-iniciar::before {
+  left: -10px;
+  background: #76002f;
+}
+
+.boton-iniciar::after {
+  right: -10px;
+  background: #76002f;
+}
+
+.boton-iniciar:hover::before,
+.boton-iniciar:hover::after {
+  width: 58%;
+}
+
+.boton-iniciar:hover span {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.boton-iniciar span {
+  color: #000000;
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}
+/* Hasta aqui termina la animacion del boton 'comenzar' a ver si podemos aplicarlo al navbar. */
