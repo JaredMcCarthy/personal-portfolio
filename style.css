@@ -114,6 +114,8 @@ body {
   z-index: 1;
 }
 
+/* Estos de aqui abajo son las animaciones hechas del boton */
+
 .boton-iniciar::before,
 .boton-iniciar::after {
   content: "";
