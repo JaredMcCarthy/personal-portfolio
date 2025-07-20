@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #010e29;
   padding-bottom: 10px;
   border-style: solid;
@@ -38,6 +38,7 @@ body {
   margin-top: 9%;
   padding-left: 10%;
   font-size: 3em;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
 }
 
@@ -47,6 +48,7 @@ body {
   font-size: 3em;
   display: inline-block;
   color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .hero p {
@@ -55,7 +57,7 @@ body {
   text-align: justify;
   font-size: 1.4rem;
   line-height: 0.8rem;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
 
@@ -92,8 +94,8 @@ body {
 /* Los primeros dos son para tamaño, ubicacion, letra, estilo del boton */
 
 .boton-iniciar {
-  margin-left: 77%;
-  padding-left: 180%;
+  margin-left: 75%;
+  padding-left: 170%;
   margin-top: 25px;
 }
 
@@ -155,3 +157,30 @@ body {
   transition: all 0.3s ease-in;
 }
 /* Hasta aqui termina la animacion del boton 'comenzar' a ver si podemos aplicarlo al navbar. */
+
+/* seccion de cartas de about me */
+
+.card-section {
+  width: 100%;
+  background-color: black;
+}
+
+.card-section .card {
+  height: 10%;
+  padding-top: 10px;
+  padding-bottom: 35%;
+}
+
+.card h2 {
+  margin-top: 10px;
+}
+
+.card h2 {
+  font-size: 10rem;
+  color: white;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}
+
+/* seccion del css de as cards */
