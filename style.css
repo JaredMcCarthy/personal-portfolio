@@ -7,7 +7,7 @@ body {
 
 .navbar {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #010e29;
+  background-color: #000000;
   padding-bottom: 10px;
   border-style: solid;
 }
@@ -19,12 +19,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding-right: 70px;
-  color: white;
+  color: #efe9dd;
 }
 
 .name-logo h1 {
   font-size: 18px;
-  color: white;
+  color: #efe9dd;
   padding: 20px;
   padding-left: 10%;
   font-family: inherit;
@@ -39,7 +39,7 @@ body {
   padding-left: 10%;
   font-size: 3em;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .hero h2 {
@@ -47,7 +47,7 @@ body {
   padding-left: 10%;
   font-size: 3em;
   display: inline-block;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -58,7 +58,7 @@ body {
   font-size: 1.4rem;
   line-height: 0.8rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 /* Contenedor principal del hero */
@@ -73,7 +73,7 @@ body {
 
 .hero {
   height: 100%;
-  background-color: #010e29;
+  background-color: #efe9dd;
   padding: 10%;
 }
 
@@ -88,6 +88,7 @@ body {
   right: 12%;
   top: 20%;
   border-radius: 1.5rem;
+  border-color: #000000;
 }
 
 /* CSS del boron iniciar */
@@ -133,12 +134,12 @@ body {
 
 .boton-iniciar::before {
   left: -10px;
-  background: #76002f;
+  background: #7b480f;
 }
 
 .boton-iniciar::after {
   right: -10px;
-  background: #76002f;
+  background: #7b480f;
 }
 
 .boton-iniciar:hover::before,
@@ -168,7 +169,6 @@ body {
 .card-section .card {
   height: 10%;
   padding-top: 10px;
-  padding-bottom: 35%;
 }
 
 .card h2 {
@@ -177,10 +177,56 @@ body {
 
 .card h2 {
   font-size: 10rem;
-  color: white;
+  color: #efe9dd;
   text-align: center;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bold;
 }
 
-/* seccion del css de as cards */
+/* Este es el css del contenido de la cartas y tmb de las cartas */
+
+.card-container {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 280px;
+  box-shadow: 0 2px 5px rgba(224, 12, 12, 0.606);
+  margin-left: 20%;
+  padding: 20px;
+}
+
+.card-container img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+}
+/* contenido de la carta 2 */
+
+.card2-container {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 100px;
+  box-shadow: 0 2px 5px rgba(224, 12, 12, 0.606);
+  margin-left: 60%;
+  margin-top: -18%;
+  padding: 20px;
+}
+
+.card2-container img {
+  width: 100%;
+  display: block;
+}
+
+.card2-content {
+  padding: 15px;
+}
+
+.cartas-section {
+  background-color: black;
+}
