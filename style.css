@@ -7,7 +7,7 @@ body {
 
 .navbar {
   font-family: sans-serif;
-  background-color: #010e29;
+  background-color: #f1e4d1;
   padding-bottom: 10px;
   border-style: solid;
 }
@@ -19,12 +19,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding-right: 70px;
-  color: white;
+  color: rgb(4, 0, 0);
 }
 
 .name-logo h1 {
   font-size: 18px;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px;
   padding-left: 10%;
   font-family: inherit;
@@ -155,3 +155,43 @@ body {
   transition: all 0.3s ease-in;
 }
 /* Hasta aqui termina la animacion del boton 'comenzar' a ver si podemos aplicarlo al navbar. */
+
+/* este es el css del espacio donde estan metidas las cards de esta seccion */
+.about-me {
+  background-color: #162660;
+  color: white;
+  padding: 100px;
+}
+
+/* este css de abajo es para la animacion de girar las tarjetas */
+
+.card {
+  height: 500px;
+  width: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease-in-out;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front-card,
+.back-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1e4d1;
+  backface-visibility: hidden;
+  color: black;
+}
+
+.back-card {
+  transform: rotateY(180deg);
+}
