@@ -6,8 +6,13 @@ body {
 }
 
 .navbar {
+<<<<<<< HEAD
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #010e29;
+=======
+  font-family: sans-serif;
+  background-color: #f1e4d1;
+>>>>>>> backend-js
   padding-bottom: 10px;
   border-style: solid;
 }
@@ -19,12 +24,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding-right: 70px;
-  color: white;
+  color: rgb(4, 0, 0);
 }
 
 .name-logo h1 {
   font-size: 18px;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 20px;
   padding-left: 10%;
   font-family: inherit;
@@ -158,29 +163,73 @@ body {
 }
 /* Hasta aqui termina la animacion del boton 'comenzar' a ver si podemos aplicarlo al navbar. */
 
-/* seccion de cartas de about me */
-
-.card-section {
-  width: 100%;
-  background-color: black;
-}
-
-.card-section .card {
-  height: 10%;
-  padding-top: 10px;
-  padding-bottom: 35%;
-}
-
-.card h2 {
-  margin-top: 10px;
-}
-
-.card h2 {
-  font-size: 10rem;
+/* este es el css del espacio donde estan metidas las cards de esta seccion */
+.about-me {
+  background-color: #162660;
   color: white;
-  text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: bold;
+  padding: 100px;
 }
 
-/* seccion del css de as cards */
+/* este css de abajo es para la animacion de girar las tarjetas */
+
+.card {
+  height: 500px;
+  width: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease-in-out;
+  margin-left: 150px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front-card,
+.back-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1e4d1;
+  backface-visibility: hidden;
+  color: black;
+}
+
+.back-card {
+  transform: rotateY(180deg);
+}
+
+.card2 {
+  height: 500px;
+  width: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease-in-out;
+  margin-left: 650px;
+  margin-top: -500px;
+}
+
+.card2:hover {
+  transform: rotateY(180deg);
+}
+
+.card3 {
+  height: 500px;
+  width: 400px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease-in-out;
+  margin-left: 1250px;
+  margin-top: -600px;
+}
+
+.card3:hover {
+  transform: rotateY(180deg);
+}
+
+/* Aqui termina el css de las cartas, su tamaño, posicion y animacion. */
