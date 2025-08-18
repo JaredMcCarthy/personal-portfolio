@@ -8,11 +8,11 @@ body {
 .navbar {
 <<<<<<< HEAD
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #010e29;
+  background-color: #000000;
 =======
   font-family: sans-serif;
   background-color: #f1e4d1;
->>>>>>> backend-js
+>>>>>>> bd36e78 (CSS del about-me y tmb estilos de colores que estamos decidiendo todavia)
   padding-bottom: 10px;
   border-style: solid;
 }
@@ -24,12 +24,20 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding-right: 70px;
+<<<<<<< HEAD
+  color: #efe9dd;
+=======
   color: rgb(4, 0, 0);
+>>>>>>> bd36e78 (CSS del about-me y tmb estilos de colores que estamos decidiendo todavia)
 }
 
 .name-logo h1 {
   font-size: 18px;
+<<<<<<< HEAD
+  color: #efe9dd;
+=======
   color: rgb(0, 0, 0);
+>>>>>>> bd36e78 (CSS del about-me y tmb estilos de colores que estamos decidiendo todavia)
   padding: 20px;
   padding-left: 10%;
   font-family: inherit;
@@ -44,7 +52,7 @@ body {
   padding-left: 10%;
   font-size: 3em;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .hero h2 {
@@ -52,7 +60,7 @@ body {
   padding-left: 10%;
   font-size: 3em;
   display: inline-block;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -63,7 +71,7 @@ body {
   font-size: 1.4rem;
   line-height: 0.8rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 /* Contenedor principal del hero */
@@ -78,7 +86,7 @@ body {
 
 .hero {
   height: 100%;
-  background-color: #010e29;
+  background-color: #efe9dd;
   padding: 10%;
 }
 
@@ -93,6 +101,7 @@ body {
   right: 12%;
   top: 20%;
   border-radius: 1.5rem;
+  border-color: #000000;
 }
 
 /* CSS del boron iniciar */
@@ -138,12 +147,12 @@ body {
 
 .boton-iniciar::before {
   left: -10px;
-  background: #76002f;
+  background: #7b480f;
 }
 
 .boton-iniciar::after {
   right: -10px;
-  background: #76002f;
+  background: #7b480f;
 }
 
 .boton-iniciar:hover::before,
@@ -163,6 +172,78 @@ body {
 }
 /* Hasta aqui termina la animacion del boton 'comenzar' a ver si podemos aplicarlo al navbar. */
 
+<<<<<<< HEAD
+/* seccion de cartas de about me */
+
+.card-section {
+  width: 100%;
+  background-color: black;
+}
+
+.card-section .card {
+  height: 10%;
+  padding-top: 10px;
+}
+
+.card h2 {
+  margin-top: 10px;
+}
+
+.card h2 {
+  font-size: 10rem;
+  color: #efe9dd;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
+}
+
+/* Este es el css del contenido de la cartas y tmb de las cartas */
+
+.card-container {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 280px;
+  box-shadow: 0 2px 5px rgba(224, 12, 12, 0.606);
+  margin-left: 20%;
+  padding: 20px;
+}
+
+.card-container img {
+  width: 100%;
+  display: block;
+}
+
+.card-content {
+  padding: 15px;
+}
+/* contenido de la carta 2 */
+
+.card2-container {
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 100px;
+  box-shadow: 0 2px 5px rgba(224, 12, 12, 0.606);
+  margin-left: 60%;
+  margin-top: -18%;
+  padding: 20px;
+}
+
+.card2-container img {
+  width: 100%;
+  display: block;
+}
+
+.card2-content {
+  padding: 15px;
+}
+
+.cartas-section {
+  background-color: black;
+=======
 /* este es el css del espacio donde estan metidas las cards de esta seccion */
 .about-me {
   background-color: #162660;
@@ -178,7 +259,6 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.8s ease-in-out;
-  margin-left: 150px;
 }
 
 .card:hover {
@@ -202,34 +282,5 @@ body {
 
 .back-card {
   transform: rotateY(180deg);
+>>>>>>> bd36e78 (CSS del about-me y tmb estilos de colores que estamos decidiendo todavia)
 }
-
-.card2 {
-  height: 500px;
-  width: 400px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease-in-out;
-  margin-left: 650px;
-  margin-top: -500px;
-}
-
-.card2:hover {
-  transform: rotateY(180deg);
-}
-
-.card3 {
-  height: 500px;
-  width: 400px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease-in-out;
-  margin-left: 1250px;
-  margin-top: -600px;
-}
-
-.card3:hover {
-  transform: rotateY(180deg);
-}
-
-/* Aqui termina el css de las cartas, su tamaño, posicion y animacion. */
