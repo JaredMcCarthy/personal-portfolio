@@ -6,13 +6,8 @@ body {
 }
 
 .navbar {
-<<<<<<< HEAD
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #000000;
-=======
-  font-family: sans-serif;
-  background-color: #f1e4d1;
->>>>>>> bd36e78 (CSS del about-me y tmb estilos de colores que estamos decidiendo todavia)
   padding-bottom: 10px;
   border-style: solid;
 }
@@ -24,20 +19,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding-right: 70px;
-<<<<<<< HEAD
   color: #efe9dd;
-=======
-  color: rgb(4, 0, 0);
->>>>>>> bd36e78 (CSS del about-me y tmb estilos de colores que estamos decidiendo todavia)
 }
 
 .name-logo h1 {
   font-size: 18px;
-<<<<<<< HEAD
   color: #efe9dd;
-=======
-  color: rgb(0, 0, 0);
->>>>>>> bd36e78 (CSS del about-me y tmb estilos de colores que estamos decidiendo todavia)
   padding: 20px;
   padding-left: 10%;
   font-family: inherit;
@@ -50,237 +37,231 @@ body {
 .hero h1 {
   margin-top: 9%;
   padding-left: 10%;
-  font-size: 3em;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: rgb(0, 0, 0);
-}
+  /* Contenedor de la barra de navegacion */
 
-.hero h2 {
-  margin-top: 0.2%;
-  padding-left: 10%;
-  font-size: 3em;
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-.hero p {
-  margin-bottom: 1%;
-  padding-left: 10%;
-  text-align: justify;
-  font-size: 1.4rem;
-  line-height: 0.8rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(0, 0, 0);
-}
+  .navbar {
+    font-family: sans-serif;
+    background-color: #f1e4d1;
+    padding-bottom: 10px;
+    border-style: solid;
+  }
 
-/* Contenedor principal del hero */
+  .navbar a {
+    float: right;
+    font-size: 16px;
+    padding: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 70px;
+    color: rgb(4, 0, 0);
+  }
 
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .name-logo h1 {
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    padding-left: 10%;
+    font-family: inherit;
+    margin: 0;
+    font-weight: bold;
+  }
 
-.hero {
-  height: 100%;
-  background-color: #efe9dd;
-  padding: 10%;
-}
+  /* Estilo para la seccion hero */
 
-/* CSS de la imagen de perfil en el hero */
-/* Este es para la ubicacion de la foto de perfil en el hero */
-.prof-imagen img {
-  width: 350px;
-  height: auto;
-  padding-top: -300px;
-  position: absolute;
-  top: 3px;
-  right: 12%;
-  top: 20%;
-  border-radius: 1.5rem;
-  border-color: #000000;
-}
+  .hero h1 {
+    margin-top: 9%;
+    padding-left: 10%;
+    font-size: 3em;
+    color: white;
+  }
 
-/* CSS del boron iniciar */
-/* Los primeros dos son para tamaño, ubicacion, letra, estilo del boton */
+  .hero h2 {
+    margin-top: 0.2%;
+    padding-left: 10%;
+    font-size: 3em;
+    display: inline-block;
+    color: white;
+  }
 
-.boton-iniciar {
-  margin-left: 75%;
-  padding-left: 170%;
-  margin-top: 25px;
-}
+  .hero p {
+    margin-bottom: 1%;
+    padding-left: 10%;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 0.8rem;
+    font-family: sans-serif;
+    color: white;
+  }
 
-.boton-iniciar {
-  padding: 16px 95px;
-  border-radius: 10px;
-  font-size: 1.1rem;
-  font-weight: bold;
-}
+  /* Contenedor principal del hero */
 
-/* este CSS es para la animacion hecha y ajustada de .io */
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.boton-iniciar {
-  border: 1px solid #000000;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in;
-  z-index: 1;
-}
+  .hero {
+    height: 100%;
+    background-color: #010e29;
+    padding: 10%;
+  }
 
-/* Estos de aqui abajo son las animaciones hechas del boton */
+  /* CSS de la imagen de perfil en el hero */
+  /* Este es para la ubicacion de la foto de perfil en el hero */
+  .prof-imagen img {
+    width: 350px;
+    height: auto;
+    padding-top: -300px;
+    position: absolute;
+    top: 3px;
+    right: 12%;
+    top: 20%;
+    border-radius: 1.5rem;
+  }
 
-.boton-iniciar::before,
-.boton-iniciar::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 0;
-  height: 100%;
-  transform: skew(15deg);
-  transition: all 0.5s;
-  overflow: hidden;
-  z-index: -1;
-}
+  /* CSS del boron iniciar */
+  /* Los primeros dos son para tamaño, ubicacion, letra, estilo del boton */
 
-.boton-iniciar::before {
-  left: -10px;
-  background: #7b480f;
-}
+  .boton-iniciar {
+    margin-left: 77%;
+    padding-left: 180%;
+    margin-top: 25px;
+  }
 
-.boton-iniciar::after {
-  right: -10px;
-  background: #7b480f;
-}
+  .boton-iniciar {
+    padding: 16px 95px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
 
-.boton-iniciar:hover::before,
-.boton-iniciar:hover::after {
-  width: 58%;
-}
+  /* este CSS es para la animacion hecha y ajustada de .io */
 
-.boton-iniciar:hover span {
-  color: #ffffff;
-  transition: 0.3s;
-}
+  .boton-iniciar {
+    border: 1px solid #000000;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+  }
 
-.boton-iniciar span {
-  color: #000000;
-  font-size: 18px;
-  transition: all 0.3s ease-in;
-}
-/* Hasta aqui termina la animacion del boton 'comenzar' a ver si podemos aplicarlo al navbar. */
+  /* Estos de aqui abajo son las animaciones hechas del boton */
 
-<<<<<<< HEAD
-/* seccion de cartas de about me */
+  .boton-iniciar::before,
+  .boton-iniciar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+  }
 
-.card-section {
-  width: 100%;
-  background-color: black;
-}
+  .boton-iniciar::before {
+    left: -10px;
+    background: #76002f;
+  }
 
-.card-section .card {
-  height: 10%;
-  padding-top: 10px;
-}
+  .boton-iniciar::after {
+    right: -10px;
+    background: #76002f;
+  }
 
-.card h2 {
-  margin-top: 10px;
-}
+  .boton-iniciar:hover::before,
+  .boton-iniciar:hover::after {
+    width: 58%;
+  }
 
-.card h2 {
-  font-size: 10rem;
-  color: #efe9dd;
-  text-align: center;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-weight: bold;
-}
+  .boton-iniciar:hover span {
+    color: #ffffff;
+    transition: 0.3s;
+  }
 
-/* Este es el css del contenido de la cartas y tmb de las cartas */
+  .boton-iniciar span {
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+  }
+  /* Hasta aqui termina la animacion del boton 'comenzar' a ver si podemos aplicarlo al navbar. */
 
-.card-container {
-  width: 350px;
-  border: 1px solid black;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 280px;
-  box-shadow: 0 2px 5px rgba(224, 12, 12, 0.606);
-  margin-left: 20%;
-  padding: 20px;
-}
+  /* este es el css del espacio donde estan metidas las cards de esta seccion */
+  .about-me {
+    background-color: #162660;
+    color: white;
+    padding: 100px;
+  }
 
-.card-container img {
-  width: 100%;
-  display: block;
-}
+  /* este css de abajo es para la animacion de girar las tarjetas */
 
-.card-content {
-  padding: 15px;
-}
-/* contenido de la carta 2 */
+  .card {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+    margin-left: 150px;
+  }
 
-.card2-container {
-  width: 350px;
-  border: 1px solid black;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 100px;
-  box-shadow: 0 2px 5px rgba(224, 12, 12, 0.606);
-  margin-left: 60%;
-  margin-top: -18%;
-  padding: 20px;
-}
+  .card:hover {
+    transform: rotateY(180deg);
+  }
 
-.card2-container img {
-  width: 100%;
-  display: block;
-}
+  .front-card,
+  .back-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1e4d1;
+    backface-visibility: hidden;
+    color: black;
+  }
 
-.card2-content {
-  padding: 15px;
-}
+  .back-card {
+    transform: rotateY(180deg);
+  }
 
-.cartas-section {
-  background-color: black;
-=======
-/* este es el css del espacio donde estan metidas las cards de esta seccion */
-.about-me {
-  background-color: #162660;
-  color: white;
-  padding: 100px;
-}
+  .card2 {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+    margin-left: 650px;
+    margin-top: -500px;
+  }
 
-/* este css de abajo es para la animacion de girar las tarjetas */
+  .card2:hover {
+    transform: rotateY(180deg);
+  }
 
-.card {
-  height: 500px;
-  width: 400px;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease-in-out;
-}
+  .card3 {
+    height: 500px;
+    width: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease-in-out;
+    margin-left: 1250px;
+    margin-top: -600px;
+  }
 
-.card:hover {
-  transform: rotateY(180deg);
-}
+  .card3:hover {
+    transform: rotateY(180deg);
+  }
 
-.front-card,
-.back-card {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1e4d1;
-  backface-visibility: hidden;
-  color: black;
-}
-
-.back-card {
-  transform: rotateY(180deg);
->>>>>>> bd36e78 (CSS del about-me y tmb estilos de colores que estamos decidiendo todavia)
-}
+  /* Aqui termina el css de las cartas, su tamaño, posicion y animacion. */
