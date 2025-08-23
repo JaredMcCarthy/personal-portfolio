@@ -148,10 +148,33 @@ body {
 /* Hasta aqui termina la animacion del boton 'comenzar' a ver si podemos aplicarlo al navbar. */
 
 /* este es el css del espacio donde estan metidas las cards de esta seccion */
+
 .about-me {
   background-color: #162660;
   color: white;
   padding: 100px;
+  min-height: 600px;
+  overflow: hidden; /* evita que algo se desborde */
+  width: 100%;
+}
+
+/* Este es el css del titulo de aboutme */
+
+.about-title {
+  padding: 60px;
+  background-color: #ffffff;
+}
+
+.about-title h2 {
+  font-size: 8rem;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-title {
+  letter-spacing: 8px;
+  line-height: 8px;
 }
 
 /* este css de abajo es para la animacion de girar las tarjetas */
@@ -208,42 +231,33 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transition: all 0.8s ease-in-out;
-  margin-left: 1250px;
-  margin-top: -600px;
+  margin-left: 1150px;
+  margin-top: -500px;
 }
 
 .card3:hover {
   transform: rotateY(180deg);
 }
 
-/* Este es el css del titulo de aboutme */
-
-.about-title h2 {
-  text-align: center;
-  padding-bottom: 20px;
-  font-size: 8rem;
-}
-
-.about-title {
-  background-color: #162660;
-}
-
 /*  Espacio del titulo de Proyectos que va antes del contenido principal */
 
-.title-proyectos {
-  padding: 50px;
-  background-color: #162660;
+.proyectos-title {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: -20px;
 }
 
-.title-proyectos h2 {
-  text-align: center;
+/* este es el css donde va ir el titulo de proyectos */
+
+.proy-title h2 {
   font-size: 8rem;
+  line-height: 10px;
+  letter-spacing: 10px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* contenido de proyectos */
-
-.proyectos-container {
-  padding: 100px;
+.cont-proyectos {
+  padding: 500px;
+  background-color: blue;
 }
-
-/* este es el css del espacio donde estan los datos de los proyectos */
