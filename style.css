@@ -215,3 +215,35 @@ body {
 .card3:hover {
   transform: rotateY(180deg);
 }
+
+/* Este es el css del titulo de aboutme */
+
+.about-title h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 8rem;
+}
+
+.about-title {
+  background-color: #162660;
+}
+
+/*  Espacio del titulo de Proyectos que va antes del contenido principal */
+
+.title-proyectos {
+  padding: 50px;
+  background-color: #162660;
+}
+
+.title-proyectos h2 {
+  text-align: center;
+  font-size: 8rem;
+}
+
+/* contenido de proyectos */
+
+.proyectos-container {
+  padding: 100px;
+}
+
+/* este es el css del espacio donde estan los datos de los proyectos */
