@@ -122,12 +122,12 @@ body {
 
 .boton-iniciar::before {
   left: -10px;
-  background: #76002f;
+  background: #150ae8d1;
 }
 
 .boton-iniciar::after {
   right: -10px;
-  background: #76002f;
+  background: #150ae8d1;
 }
 
 .boton-iniciar:hover::before,
@@ -150,7 +150,7 @@ body {
 /* este es el css del espacio donde estan metidas las cards de esta seccion */
 
 .about-me {
-  background-color: #162660;
+  background-color: #010e29;
   color: white;
   padding: 100px;
   min-height: 600px;
@@ -162,12 +162,12 @@ body {
 
 .about-title {
   padding: 60px;
-  background-color: #ffffff;
+  background-color: rgb(0, 0, 0);
 }
 
 .about-title h2 {
   font-size: 8rem;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -242,9 +242,8 @@ body {
 /*  Espacio del titulo de Proyectos que va antes del contenido principal */
 
 .proyectos-title {
-  background-color: #ffffff;
-  padding: 30px;
-  margin-top: -20px;
+  background-color: #000000;
+  padding: 20px;
 }
 
 /* este es el css donde va ir el titulo de proyectos */
@@ -255,9 +254,75 @@ body {
   letter-spacing: 10px;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
 }
 
+/* Este es el css del contender donde esta el contenido de los proyectos */
+
 .cont-proyectos {
-  padding: 500px;
-  background-color: blue;
+  padding: 380px;
+  background-color: #010e29;
+}
+
+/* de aqui para abajo solo va el contendido */
+
+.slide-container {
+  position: relative;
+  overflow: hidden;
+  width: 10%;
+  height: 50%;
+}
+
+.slide {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+/* .slide {
+  width: 100%;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.carrusel-subtitulos {
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  background-color: rgb(0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.carrusel-subtitulos h3 {
+  margin-top: 0;
+} */
+
+/* css de los botones */
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.7);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
 }
