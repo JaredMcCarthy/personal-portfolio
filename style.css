@@ -266,7 +266,7 @@ body {
 
 /* de aqui para abajo solo va el contendido */
 
-.slide-container {
+/* .slide-container {
   position: relative;
   overflow: hidden;
   width: 10%;
@@ -280,12 +280,13 @@ body {
   width: 100px;
   height: 100px;
   background-color: white;
-}
+} */
 
-/* .slide {
+.slide {
   width: 100%;
   flex-shrink: 0;
   position: relative;
+  height: 50%;
 }
 
 .slide img {
@@ -305,11 +306,10 @@ body {
 
 .carrusel-subtitulos h3 {
   margin-top: 0;
-} */
+}
 
 /* css de los botones */
-
-.prev-btn,
+*/ .prev-btn,
 .next-btn {
   position: absolute;
   background-color: rgba(255, 0, 0, 0.7);
