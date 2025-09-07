@@ -1,72 +1,106 @@
 // JS solamente del carrusel de proyectos y su funcion y diccionario
-// Este es basicamente el diccionario donde se guardara la info e imagenes de ls proyectos
 let imagenes = [
   {
-    url: "ImagenesProyectos/img1webp",
+    url: "ImagenesProyectos/img1.webp",
     nombre: "Proyecto 1",
     descripcion: "Esta es la descripcion del proyecto 1 Portafolio Personal",
   },
   {
-    url: "Imagenes Proyectos/img2.webp",
+    url: "ImagenesProyectos/img2.webp",
     nombre: "Proyecto 2",
-    descripcion: "Esta es la descripcion del proyecto 1 Portafolio Personal",
+    descripcion: "Esta es la descripcion del proyecto 2 Portafolio Personal",
   },
   {
-    url: "Imagenes Proyectos/img3.webp",
+    url: "ImagenesProyectos/img3.webp",
     nombre: "Proyecto 3",
-    descripcion: "Esta es la descripcion del proyecto 1 Portafolio Personal",
+    descripcion: "Esta es la descripcion del proyecto 3 Portafolio Personal",
   },
 ];
 
-// creamos las variables de todas las partes del html que usaremos
+// Variables globales
+// se declaramos todas las variables que usaremos que estane en html tambien
 let atras = document.getElementById("atras");
 let adelante = document.getElementById("adelante");
 let imagen = document.getElementById("img");
-let puntos = documento.getElementById("puntos");
+let puntos = document.getElementById("puntos");
 let texto = document.getElementById("texto");
 let actual = 0;
-posicionCarrusel1();
 
-// aqui es la funcion para atras, cambia la imagen y el texto segun el numero de la variable actual
+// Inicializar el carrusel - Asi se inicia el carrusel
+function inicializarCarrusel() {
+  actualizarContenido();
+  actualizarPuntos();
+}
 
-atras.addEventListener("click", function () {
-  actual -= 1;
+// Actualizar imagen y texto
+function actualizarContenido() {
+  imagen.innerHTML =
+    '<img class="img" src="' +
+    imagenes[actual].url +
+    '" alt="' +
+    imagenes[actual].nombre +
+    '" loading="lazy"/>';
+  texto.innerHTML =
+    "<h3>" +
+    imagenes[actual].nombre +
+    "</h3><p>" +
+    imagenes[actual].descripcion +
+    "</p>";
+}
 
-  if (actual == -1) {
-    actual = imagenes.length - 1;
-  }
-
-  imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="imagen 1"loading="lazy"/> `;
-  texto.innerHTML = `
-  <h3>${imagenes[actual].nombre}</h3>
-  <p>${imagenes[actual].descripcion}</p>`;
-});
-
-// ahora solamente falta adelante, copiamos lo de arriba aqui abajo cambiando variables
-
-adelante.addEventListener("click", function () {
-  actual += 1;
-  // Solo cambia aqui que sumamos 1 y si actual es igual al largo de img pues actual se queda en 0
-  if (actual == imagenes.length) {
-    actual = 0;
-  }
-  // todo lo demas se queda igual
-  imagen.innerHTML = ` <img class="img" src="${imagenes[actual].url}" alt="imagen 1"loading="lazy"/> `;
-  texto.innerHTML = `
-  <h3>${imagenes[actual].nombre}</h3>
-  <p>${imagenes[actual].descripcion}</p>
-  `;
-
-  posicionCarrusel1();
-});
-
-function posicionCarrusel1() {
+// Actualizar puntos indicadores
+function actualizarPuntos() {
   puntos.innerHTML = "";
-  for (var i = 0; i < imagenes.length; i++) {
-    if (i == actual) {
-      puntos.innerHTML += `<p class="bold">.<p>`;
+  for (let i = 0; i < imagenes.length; i++) {
+    if (i === actual) {
+      puntos.innerHTML += '<span class="bold">.</span>';
     } else {
-      puntos.innerHTML += `<p>.<p>`;
+      puntos.innerHTML += "<span>.</span>";
     }
   }
 }
+
+// Event listeners
+atras.addEventListener("click", function () {
+  actual = (actual - 1 + imagenes.length) % imagenes.length; //cuando haces click resta 1
+  actualizarContenido();
+  actualizarPuntos();
+});
+
+adelante.addEventListener("click", function () {
+  actual = (actual + 1) % imagenes.length; //cuando hace click suma 1
+  actualizarContenido();
+  actualizarPuntos();
+});
+
+// Inicializar al cargar la página
+document.addEventListener("DOMContentLoaded", inicializarCarrusel);
+
+// JS de que las imagenes pasen automatico cada 3 segundos o lo que sea
+
+let intervaloCambio;
+
+// esta funcion hace el cambio automatico
+
+function iniciarCambioAutomatico() {
+  intervaloCambio = setInterval(function () {
+    actual = (actual + 1) % imagenes.length;
+    actualizarContenido();
+    actualizarPuntos();
+  }, 5000); //aqui se pone cada 3seg
+}
+
+function detenerCambioAutomatico() {
+  clearInterval(intervaloCambio); //detiene con clearInterval el setinterval osea lo detiene
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  iniciarCambioAutomatico();
+
+  let carrusel = document.getElementById("carrusel");
+  carrusel.addEventListener("mouseover", detenerCambioAutomatico);
+  carrusel.addEventListener("mouseout", iniciarCambioAutomatico);
+  //esta funcion se detiene o sigue cuando el usuario interactua con el carrusel
+});
+
+// aqui termina el js del carrusel de proyectos.
