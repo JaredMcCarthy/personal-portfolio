@@ -450,12 +450,23 @@ body {
 /* de aqui abajo es donde va ir el contenido real de habilidades */
 
 .contenido-hab {
-  padding: 150px;
-  min-height: 400px;
-  overflow: flex;
-  width: 89.6%;
+  position: relative; /* con este lo moves a todos lados porque es el contenedor */
+  height: 650px; /* creo que es mejor este que solo paddding para contenedor */
 }
 
-.skill-title {
-  position: relative;
+.titulo-habilidades {
+  position: absolute; /* para mover elementos en contenedor usar este abs y el de arriba rel*/
+  top: 10%; /* Cambia el porcentaje para moverlo verticalmente */
+  left: 15%;
+  right: auto;
+  bottom: auto; /* manera correcta arriba, derecha y asi moverlo */
+}
+
+.skill-text {
+  position: absolute;
+  top: 20%;
+  left: 9%;
+  width: 600px;
+  font-size: 20px;
+  line-height: 1.5;
 }
