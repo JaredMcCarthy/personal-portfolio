@@ -428,3 +428,34 @@ body {
   margin-right: 10px;
   color: #5317eb;
 }
+
+/* Css de habilidades nada mas hacia abajo */
+
+/* espacio de donde va ir el titulo */
+
+.esp-habilidades {
+  padding: 50px;
+  background-color: rgb(0, 0, 0);
+}
+
+.t-habilidades h2 {
+  font-size: 8rem;
+  line-height: 10px;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* de aqui abajo es donde va ir el contenido real de habilidades */
+
+.contenido-hab {
+  padding: 150px;
+  min-height: 400px;
+  overflow: flex;
+  width: 89.6%;
+}
+
+.skill-title {
+  position: relative;
+}
