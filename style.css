@@ -461,10 +461,19 @@ body {
   flex: 1;
 }
 
+.hab-info h2 {
+  font-size: 3rem;
+}
+
+.hab-info p {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
 .titulo-habilidades {
   position: absolute; /* para mover elementos en contenedor usar este abs y el de arriba rel*/
-  top: 10%; /* Cambia el porcentaje para moverlo verticalmente */
-  left: 15%;
+  top: 5%; /* Cambia el porcentaje para moverlo verticalmente */
+  left: 10%;
   right: auto;
   bottom: auto; /* manera correcta arriba, derecha y asi moverlo */
 }
@@ -498,10 +507,10 @@ body {
 
 .skill-pictures {
   display: grid;
-  grid-template-columns: repeat(2, 3fr);
+  grid-template-columns: repeat(3, 3fr);
   gap: 50px;
   justify-content: center;
-  margin-right: 30%;
+  margin-right: 15%;
   margin-top: 50px;
 }
 
