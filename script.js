@@ -1,17 +1,17 @@
 // JS solamente del carrusel de proyectos y su funcion y diccionario
 let imagenes = [
   {
-    url: "ImagenesProyectos/img1.webp",
+    url: "Imagenes-Project/img1.webp",
     nombre: "Proyecto 1",
     descripcion: "Esta es la descripcion del proyecto 1 Portafolio Personal",
   },
   {
-    url: "ImagenesProyectos/img2.webp",
+    url: "Imagenes-Project/img2.webp",
     nombre: "Proyecto 2",
     descripcion: "Esta es la descripcion del proyecto 2 Portafolio Personal",
   },
   {
-    url: "ImagenesProyectos/img3.webp",
+    url: "Imagenes-Project/img3.webp",
     nombre: "Proyecto 3",
     descripcion: "Esta es la descripcion del proyecto 3 Portafolio Personal",
   },
