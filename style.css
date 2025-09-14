@@ -451,7 +451,14 @@ body {
 
 .contenido-hab {
   position: relative; /* con este lo moves a todos lados porque es el contenedor */
-  height: 650px; /* creo que es mejor este que solo paddding para contenedor */
+  height: 700px; /* creo que es mejor este que solo paddding para contenedor */
+  display: flex;
+  align-items: flex-start;
+  gap: 40px; /* hacemos que inicie desde la izq */
+}
+
+.hab-info {
+  flex: 1;
 }
 
 .titulo-habilidades {
@@ -469,4 +476,46 @@ body {
   width: 600px;
   font-size: 20px;
   line-height: 1.5;
+}
+
+/* este es el css de las imagenes tamano y ubicacion */
+
+/*
+.skill-pictures img {
+  width: 150px; /* con este el tamano de la img */
+/*height: auto; /*activas la altura se supone */
+/*margin-left: 55%; /*ubicas a la derecha */
+/*argin-top: 50px; /*con este la altura wy*/
+
+/*
+.skill-pictures2 img {
+  width: 150px;
+  height: auto;
+  margin-left: 70%;
+  margin-top: -300px;
+}
+*/
+
+.skill-pictures {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  gap: 50px;
+  justify-content: center;
+  margin-right: 30%;
+  margin-top: 50px;
+}
+
+.skill-pictures img {
+  width: 150px;
+  height: auto;
+  display: block;
+  align-items: flex-start;
+}
+
+/* CSS del titulo de contacto */
+
+.contacto {
+  background-color: #010e29;
+  color: white;
+  padding: 100px;
 }
