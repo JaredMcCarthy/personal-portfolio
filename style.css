@@ -524,7 +524,34 @@ body {
 /* CSS del titulo de contacto */
 
 .contacto {
-  background-color: #010e29;
-  color: white;
-  padding: 100px;
+  padding: 40px;
+  background-color: #000000;
+}
+
+.titulo-contacto h2 {
+  font-size: 8rem;
+  line-height: 10px;
+  letter-spacing: 12px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* parte del contenido principal de contact me */
+
+.contenedor-principal {
+  width: 400px;
+  height: 650px;
+  background-color: white;
+  margin: 20px auto;
+  position: relative;
+}
+
+.segundo-contenedor {
+  width: 800px;
+  height: 500px;
+  background-color: black;
+  position: absolute;
+  top: 50px;
+  margin-left: 90px;
 }
