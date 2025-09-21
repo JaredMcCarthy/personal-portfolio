@@ -951,3 +951,16 @@ strong {
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* de aqui para abajo es el css para las pestañas para redes soiales en contact me */
+
+.social-container {
+  display: flex;
+  flex-direction: row;
+  align-items: cet;
+}
+
+.social-container a {
+  margin: 0 10px;
+  color: #333;
+}
