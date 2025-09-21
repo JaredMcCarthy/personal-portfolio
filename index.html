@@ -183,21 +183,35 @@
         <!-- Aqui termina el label de asunto-->
         <!-- Comienzo del label del mensaje generala a enviar -->
         <div class="obtener-mensaje">
-          <input
+          <textarea
             required=""
-            type="text"
             name="mensaje"
             autocomplete="off"
             class="input-mensaje"
-          />
-          <label class="mensaje-label"
-            >Escriba un mensaje, yo lo recibire a mi correo ;)</label
-          >
+            rows="5"
+            placeholder=" Escriba un mensaje, yo lo recibire al correo :)"
+          ></textarea>
+          <!-- textarea es mejor que input para que es user escriba mucho-->
+          <label class="mensaje-label"></label>
         </div>
 
         <!-- Aqui termina el label del mensaje general -->
+        <!--Este es el boton para enviar el mensaje y contactarme-->
+
+        <button type="button" class="btn">
+          <strong>ENVIAR</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
+        </button>
+        <!--Este es el final del html del boton de enviar info-->
       </div>
     </div>
+
+    <div class="social-media">
+      <a href="#" class="social-icons"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
     <div class="barra-baja">
       <p>© 2024 JJ Portfolio. Todos los derechos reservados.</p>
     </div>
