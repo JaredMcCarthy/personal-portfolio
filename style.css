@@ -538,11 +538,15 @@ body {
 /* parte del contenido principal de contact me */
 
 .contenedor-principal {
-  width: 400px;
-  height: 780px;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  background: none;
   margin: 25px auto;
   position: relative;
+  min-height: 780px;
 }
 
 .segundo-contenedor {
@@ -953,14 +957,62 @@ strong {
 }
 
 /* de aqui para abajo es el css para las pestañas para redes soiales en contact me */
+/* tambien estamos editando parte de segundo contenedor */
 
-.social-container {
+.info-contacto {
+  width: 300px;
+  background: #010e29;
+  padding: 40px 20px;
+  border-radius: 15px;
+  color: white;
+  height: 800px;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  align-items: cet;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.social-container a {
-  margin: 0 10px;
-  color: #333;
+.info-contacto h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 2.5rem;
+  transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.segundo-contenedor {
+  width: 800px;
+  height: 800px;
+  background-color: black;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  position: static; /* Elimina left/top para que no se desplace */
+}
+
+.social-icons2 {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons2 a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons2 a {
+  color: #fff;
+  font-size: 2.5rem;
+  transition: transform 0.2s;
 }
