@@ -981,6 +981,8 @@ strong {
 .social-icons {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap; /* Este sirve por si no caben en la misma contendorm se bajan, no se salen de el.*/
+  max-width: 300px; /* y este dice las cokumnas que son si son 300 pues son 4 columnas */
 }
 
 .social-icons a {
@@ -1002,9 +1004,12 @@ strong {
   position: static; /* Elimina left/top para que no se desplace */
 }
 
+/* 
 .social-icons2 {
   display: flex;
   gap: 20px;
+  padding-top: 90px;
+  padding-left: 50px;
 }
 
 .social-icons2 a:hover {
@@ -1014,5 +1019,6 @@ strong {
 .social-icons2 a {
   color: #fff;
   font-size: 2.5rem;
-  transition: transform 0.2s;
-}
+  transition: transform 0.2s; */
+/* } */
+/* vamos a ver como funcona quitando uno de ellos */
