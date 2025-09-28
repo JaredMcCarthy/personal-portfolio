@@ -7,9 +7,39 @@ body {
 
 .navbar {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000000;
+  background-color: #d65a31;
   padding-bottom: 10px;
   border-style: solid;
+}
+
+/* con este CSS de abajo hacemos que el navbar se mantenga cuando baja el usuario */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+/* 
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s ease; /* hace que sea transparante */
+/* } */
+/* 
+.navbar:hover {
+  background-color: #0044ff; /*colo que quiero al pasar el rato */
+/* } */
+
+.navbar {
+  background-color: d65a31;
+  transition: backgroud-color 0.6s ease;
+}
+
+.navbar.scrolled {
+  background-color: transparent; /* este hace que se mantenga invisi al scrolear */
+}
+
+.navbar:hover {
+  background-color: #d65a31;
 }
 
 .navbar a {
@@ -19,12 +49,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   padding-right: 70px;
-  color: #efe9dd;
+  color: #faf6e9;
 }
 
 .name-logo h1 {
   font-size: 18px;
-  color: #efe9dd;
+  color: #faf6e9;
   padding: 20px;
   padding-left: 10%;
   font-family: inherit;
@@ -38,7 +68,7 @@ body {
   margin-top: 9%;
   padding-left: 10%;
   font-size: 3em;
-  color: white;
+  color: #eeeeee;
 }
 
 .hero h2 {
@@ -46,7 +76,7 @@ body {
   padding-left: 10%;
   font-size: 3em;
   display: inline-block;
-  color: white;
+  color: #eeeeee;
 }
 
 .hero p {
@@ -56,7 +86,7 @@ body {
   font-size: 1.4rem;
   line-height: 0.8rem;
   font-family: sans-serif;
-  color: white;
+  color: #eeeeee;
 }
 
 /* Contenedor principal del hero */
@@ -71,7 +101,7 @@ body {
 
 .hero {
   height: 100%;
-  background-color: #010e29;
+  background-color: #222831;
   padding: 10%;
 }
 
@@ -91,7 +121,7 @@ body {
 /* Los primeros dos son para tamaño, ubicacion, letra, estilo del boton */
 
 .boton-iniciar {
-  margin-left: 77%;
+  margin-left: 75%;
   padding-left: 180%;
   margin-top: 25px;
   padding: 16px 95px;
@@ -122,12 +152,12 @@ body {
 
 .boton-iniciar::before {
   left: -10px;
-  background: #150ae8d1;
+  background: #d65a31;
 }
 
 .boton-iniciar::after {
   right: -10px;
-  background: #150ae8d1;
+  background: #d65a31;
 }
 
 .boton-iniciar:hover::before,
@@ -136,7 +166,7 @@ body {
 }
 
 .boton-iniciar:hover span {
-  color: #ffffff;
+  color: #faf6e9;
   transition: 0.3s;
 }
 
@@ -150,7 +180,7 @@ body {
 /* este es el css del espacio donde estan metidas las cards de esta seccion */
 
 .about-me {
-  background-color: #010e29;
+  background-color: #222831;
   color: white;
   padding: 100px;
   min-height: 400px;
@@ -161,13 +191,15 @@ body {
 /* Este es el css del titulo de aboutme */
 
 .about-title {
-  padding: 60px;
-  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  background-color: #d65a31;
+  letter-spacing: 10px;
+  line-height: 8px;
 }
 
 .about-title h2 {
   font-size: 8rem;
-  color: rgb(255, 255, 255);
+  color: #faf6e9;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -202,9 +234,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f1e4d1;
+  background-color: #393e46;
   backface-visibility: hidden;
-  color: black;
+  color: #eeeeee;
 }
 
 .back-card {
@@ -242,8 +274,10 @@ body {
 /*  Espacio del titulo de Proyectos que va antes del contenido principal */
 
 .proyectos-title {
-  background-color: #000000;
+  background-color: #d65a31;
   padding: 15px;
+  letter-spacing: 10px;
+  line-height: 8px;
 }
 
 /* este es el css donde va ir el titulo de proyectos */
@@ -251,10 +285,9 @@ body {
 .proy-title h2 {
   font-size: 8rem;
   line-height: 10px;
-  letter-spacing: 10px;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
+  color: #faf6e9;
 }
 
 /* Este es el css del contender donde esta el contenido de los proyectos */
@@ -313,7 +346,7 @@ body {
 .body-carrusel {
   width: 100vw;
   height: 70vh;
-  background-color: #010e29;
+  background-color: #222831;
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
@@ -432,16 +465,16 @@ body {
 /* espacio de donde va ir el titulo */
 
 .esp-habilidades {
-  padding: 50px;
-  background-color: rgb(0, 0, 0);
+  padding: 15px;
+  background-color: #d65a31;
+  letter-spacing: 10px;
 }
 
 .t-habilidades h2 {
   font-size: 8rem;
   line-height: 10px;
-  letter-spacing: 10px;
   text-align: center;
-  color: #ffffff;
+  color: #faf6e9;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -453,6 +486,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 40px; /* hacemos que inicie desde la izq */
+  background-color: #222831;
 }
 
 .hab-info {
@@ -461,11 +495,13 @@ body {
 
 .hab-info h2 {
   font-size: 3rem;
+  color: #eeeeee;
 }
 
 .hab-info p {
   font-size: 1.4rem;
   margin-bottom: 1rem;
+  color: #eeeeee;
 }
 
 .titulo-habilidades {
@@ -523,15 +559,15 @@ body {
 
 .contacto {
   padding: 10px;
-  background-color: #000000;
+  background-color: #d65a31;
+  letter-spacing: 10px;
 }
 
 .titulo-contacto h2 {
-  font-size: 8rem;
+  font-size: 6rem;
   line-height: 10px;
-  letter-spacing: 15px;
   text-align: center;
-  color: #ffffff;
+  color: #faf6e9;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -544,15 +580,15 @@ body {
   gap: 40px;
   width: 100%;
   background: none;
-  margin: 25px auto;
   position: relative;
   min-height: 780px;
+  background-color: #222831;
 }
 
 .segundo-contenedor {
+  background-color: #d65a31;
   width: 800px;
   height: 750px;
-  background-color: black;
   position: relative;
   top: 10px;
   left: 200px;
@@ -561,7 +597,7 @@ body {
 }
 
 .segundo-contenedor h2 {
-  color: white;
+  color: #d65a31;
   text-align: center;
   padding: 40px;
   font-size: 5rem;
@@ -601,7 +637,7 @@ body {
 .input:focus,
 input:valid {
   outline: none;
-  border: 1.5px solid #f80505;
+  border: 1.5px solid #222831;
 }
 
 .input:focus ~ label,
@@ -647,7 +683,7 @@ input:valid ~ label {
 .input-email:focus,
 input:valid {
   outline: none;
-  border: 1.5px solid #f80505;
+  border: 1.5px solid #222831;
 }
 
 .input-email:focus ~ label,
@@ -693,7 +729,7 @@ input:valid ~ label {
 .input-asunto:focus,
 input:valid {
   outline: none;
-  border: 1.5px solid #f80505;
+  border: 1.5px solid #222831;
 }
 
 .input-asunto:focus ~ label,
@@ -745,7 +781,7 @@ input:valid ~ label {
 .input-mensaje:focus,
 .input-mensaje:valid {
   outline: none;
-  border: 1.5px solid #f80505;
+  border: 1.5px solid #222831;
 }
 
 .input-mensaje:focus ~ label,
@@ -944,13 +980,13 @@ strong {
 /* este es nada mas el css de lo iultimo que hay en la web */
 
 .barra-baja {
-  background-color: #000000;
+  background-color: #222831;
   padding: 50px;
   text-align: center;
 }
 
 .barra-baja p {
-  color: white;
+  color: #d65a31;
   font: 1.4rem;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -961,15 +997,16 @@ strong {
 
 .info-contacto {
   width: 300px;
-  background: #010e29;
+  background: #222831;
   padding: 40px 20px;
   border-radius: 15px;
-  color: white;
-  height: 800px;
+  color: #d65a31;
+  height: 400px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 70px;
 }
 
 .info-contacto h3 {
@@ -998,7 +1035,7 @@ strong {
 .segundo-contenedor {
   width: 800px;
   height: 800px;
-  background-color: black;
+  background-color: #393e46;
   margin-bottom: 50px;
   border-radius: 15px;
   position: static; /* Elimina left/top para que no se desplace */
