@@ -9,7 +9,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #d65a31;
   padding-bottom: 10px;
-  border-style: solid;
 }
 
 /* con este CSS de abajo hacemos que el navbar se mantenga cuando baja el usuario */
@@ -19,6 +18,23 @@ body {
   width: 100%;
   z-index: 1000;
 }
+
+/* estas DOS opciones hacen que aparezca la linea encima del las opc del navbar */
+
+.navbar a:hover {
+  border-bottom: 2px solid black;
+}
+
+navbar a {
+  transition: border-bottom 0.3s;
+}
+
+/* de aqui abajo basicamente es para que al presionar una opcion ayude a llevarte a esa parte del website */
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* 
 .navbar {
   background-color: transparent;
@@ -110,7 +126,7 @@ body {
 .prof-imagen img {
   width: 350px;
   height: auto;
-  padding-top: -300px;
+  padding-top: -390px;
   position: absolute;
   top: 20%;
   right: 12%;
@@ -123,7 +139,7 @@ body {
 .boton-iniciar {
   margin-left: 75%;
   padding-left: 180%;
-  margin-top: 25px;
+  margin-top: 10px;
   padding: 16px 95px;
   border-radius: 10px;
   font-size: 1.1rem;
@@ -980,13 +996,13 @@ strong {
 /* este es nada mas el css de lo iultimo que hay en la web */
 
 .barra-baja {
-  background-color: #222831;
-  padding: 50px;
+  background-color: #d65a31;
+  padding: 15px;
   text-align: center;
 }
 
 .barra-baja p {
-  color: #d65a31;
+  color: #ece8d9;
   font: 1.4rem;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
