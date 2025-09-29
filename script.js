@@ -104,3 +104,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // aqui termina el js del carrusel de proyectos.
+
+// aqui empieza boton del empezar ahora
+
+document.getElementById("btnComenzar").addEventListener("click", function () {
+  document.getElementById("about-me").scrollIntoView({ behavior: "smooth" });
+
+  // Espera 4 segundos DESPUÉS de que el usuario llegue a "about-me"
+  setTimeout(function () {
+    document
+      .getElementById("proyectos-title")
+      .scrollIntoView({ behavior: "smooth" });
+  }, 4000);
+});
