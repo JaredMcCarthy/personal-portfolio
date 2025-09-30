@@ -7,13 +7,13 @@ let imagenes = [
       "Mi primer proyecto desarrollado con HTML, CSS y JavaScript, diseñado para mostrar mi trabajo y habilidades en la web, disponible en Github.",
   },
   {
-    url: "Imagenes-Project/img2.webp",
+    url: "Imagenes-Project/proyectoNoTerminado.jpeg",
     nombre: "TaskFlowCLI",
     descripcion:
-      "TaskFlowCLI es un proyecto de interfaz de línea de comandos desarrollado principalmente en Python, donde integré inteligencia artificial mediante comandos simples para facilitar el uso de aplicaciones y programas.",
+      "TaskFlowCLI es un proyecto de interfaz de línea de comandos desarrollado principalmente en Python, donde integré inteligencia artificial mediante comandos simples para facilitar el uso de aplicaciones y programas, disponible en Github.",
   },
   {
-    url: "Imagenes-Project/img3.webp",
+    url: "Imagenes-Project/proyectoterminado.jpeg",
     nombre: "NewLife Club",
     descripcion:
       "Este proyecto lo desarrollé para entender mejor la funcionalidad y lógica de un sitio web en producción, usando principalmente Cursor. Aprendí a manejar herramientas como Render, PostgreSQL y Node.js. El sitio fue lanzado a producción para miles de usuarios y sentó las bases de una agencia que ofrece desarrollo web a comercios, disponible en Github. ",
