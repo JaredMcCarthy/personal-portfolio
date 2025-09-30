@@ -252,6 +252,53 @@ html {
   display: block;
 }
 
+/* estos dos de atras son lo de las imagenes de las cards del mismo tamano*/
+
+/* este es el css para que la info quepa dentro de la backpart de la card */
+
+.back-card {
+  transform: rotateY("180deg");
+  background: #fff;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 32px 24px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.info-list {
+  list-style: disc inside;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.info-list li {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+}
+
+.info-list strong {
+  color: #ffffff;
+  font-weight: lighter;
+}
+
+.titulo-card {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+  color: #e7e7e7;
+  font-weight: lighter;
+  text-align: left;
+}
+
+/* esta es el final de la parte de info de las cards */
+
 .card {
   height: 500px;
   width: 400px;
